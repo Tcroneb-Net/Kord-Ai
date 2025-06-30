@@ -3,9 +3,9 @@ const { existsSync } = require('fs')
 if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || '',
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "2349067339193",
-    WORKTYPE: process.env.WORKTYPE || "private",
+    SESSION_ID: process.env.SESSION_ID || 'kord_ai-FBSKEDNgupwddXDr',
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "263788533181",
+    WORKTYPE: process.env.WORKTYPE || "public",
     PREFIX: process.env.PREFIX || "[.]",
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || true,
     MONGODB_URI: process.env.MONGODB_URI || "",
@@ -16,11 +16,11 @@ module.exports = {
     ERROR_MSG: process.env.ERROR_MSG || true,
     TIMEZONE: process.env.TIMEZONE || "Africa/Lagos",
     CAPTION: process.env.CAPTION || "",
-    STICKER_PACKNAME: process.env.STICKER_PACKNAME || "Kord",
+    STICKER_PACKNAME: process.env.STICKER_PACKNAME || "crone",
     STICKER_AUTHOR: process.env.STICKER_AUTHOR || "🤍",
     BOT_PRESENCE: process.env.BOT_PRESENCE || "available", // for online, "composing" for typing 
     REACT: process.env.REACT || false,
-    READ_MESSAGE: process.env.READ_MESSAGE || "false",
+    READ_MESSAGE: process.env.READ_MESSAGE || "true",
     OWNER_NAME: process.env.OWNER_NAME || "Mirage",
     BOT_NAME: process.env.BOT_NAME || "Kord",
     RENDER_API_KEY: process.env.RENDER_API_KEY,
