@@ -5,7 +5,7 @@ if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 module.exports = {
     SESSION_ID: process.env.SESSION_ID || 'kord_ai-kA5HkKzD6JNDMpgo',
     OWNER_NUMBER: process.env.OWNER_NUMBER || "2349131250124",
-    WORKTYPE: process.env.WORKTYPE || "private",
+    WORKTYPE: process.env.WORKTYPE || "public",
     PREFIX: process.env.PREFIX || "[.]",
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || true,
     MONGODB_URI: process.env.MONGODB_URI || "",
