@@ -3,7 +3,7 @@ const { existsSync } = require('fs')
 if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 
 module.exports = { 
-    SESSION_ID: process.env.SESSION_ID || '',
+    SESSION_ID: process.env.SESSION_ID || 'kord_ai-gxOGc46JwJueiQgM',
     OWNER_NUMBER: process.env.OWNER_NUMBER || "263785380172",
     WORKTYPE: process.env.WORKTYPE || "private",
     PREFIX: process.env.PREFIX || " ",
@@ -16,15 +16,15 @@ module.exports = {
     ERROR_MSG: process.env.ERROR_MSG || true,
     TIMEZONE: process.env.TIMEZONE || "Africa/Lagos",
     CAPTION: process.env.CAPTION || "",
-    STICKER_PACKNAME: process.env.STICKER_PACKNAME || "Kord",
+    STICKER_PACKNAME: process.env.STICKER_PACKNAME || "Trigger",
     STICKER_AUTHOR: process.env.STICKER_AUTHOR || "🤍",
     BOT_PRESENCE: process.env.BOT_PRESENCE || "available",
     REACT: process.env.REACT || false,
     READ_MESSAGE: process.env.READ_MESSAGE || "false",
-    OWNER_NAME: process.env.OWNER_NAME || "Mirage",
-    BOT_NAME: process.env.BOT_NAME || "Kord",
+    OWNER_NAME: process.env.OWNER_NAME || "Trigger",
+    BOT_NAME: process.env.BOT_NAME || "Trigger",
     RENDER_API_KEY: process.env.RENDER_API_KEY,
-    ANTIDELETE: process.env.ANTIDELETE || "on",
+    ANTIDELETE: process.env.ANTIDELETE || "off",
     ANTIDELETE_INCHAT: process.env.ANTIDELETE_INCHAT || "off",
     ANTI_EDIT: process.env.ANTI_EDIT || "off",
     ANTI_EDIT_IN_CHAT: process.env.ANTI_EDIT_IN_CHAT || "off",
